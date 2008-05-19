@@ -1,7 +1,6 @@
 package PPI::Document;
 use strict;
 use warnings;
-use Perl6::Say;
 
 sub index_line_to_sub {
     my $self = shift;
@@ -17,7 +16,6 @@ sub index_line_to_sub {
         my ( $line, $rowchar, $col ) = @{ $token->location };
         my $statement = $token->statement;
 
-        #say "$line $package $sub";
         $lines[$line] = [ $package, $sub ];
         next unless $statement;
         if ( $statement->class eq 'PPI::Statement::Sub' ) {
@@ -46,7 +44,7 @@ package PPIx::LineToSub;
 use strict;
 use warnings;
 use PPI;
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 1;
 
