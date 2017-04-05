@@ -1,4 +1,4 @@
-#!perl
+
 # Fruits taken from http://www.thefruitpages.com/alphabet.shtml
 
 print "Hello world!\n";
@@ -29,4 +29,7 @@ sub foo {
 
 sub bar {
 
-} 
+}
+
+sub Nairobi::bazzle {
+}
